@@ -9,7 +9,159 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <div class="container">
+            <img src="img/logo.svg" alt="The Witcher's logo " class="header__logo">
+
+            <p class="header__announcment">2 сезон уже с 17 декабря</p>
+
+            <nav class="header__navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="https://www.netflix.com/ru/" class="navigation__link navigation__link_netflix"></a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="https://okko.tv/" class="navigation__link navigation__link_okko"></a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="https://www.kinopoisk.ru/" class="navigation__link navigation__link_kinopoisk"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="present">
+
+        <div class="container">
+            <div class="present">
+                <h1 class="present__title">
+                    Ведьмак
+                </h1>
+                <p class="present__tagline">Те, кто связан предназначением,
+                    всегда найдут друг друга
+                </p>
+                <a href="https://youtu.be/aTPPmHqMZOw" class="present__btn">Nhtqkth</a>
+            </div>
+
+            <div class="present__tabs tabs">
+                <ul class="tabs__control">
+                    <li class="tabs__btn-wrapper">
+                        <button class="tabs__btn tabs__btn_">Видео</button>
+                    </li>
+                    <li class="tabs__btn-wrapper">
+                        <button class="tabs__btn">Фото</button>
+                    </li>
+                    <li class="tabs__btn-wrapper">
+                        <button class="tabs__btn">Мерч</button>
+                    </li>
+                </ul>
+                <ul class="tabs__list">
+                    <li class="tabs__item tabs__item_active">
+                        <ul class="tabs__content">
+                            <li class="card card_video">
+                                <a href="https://youtu.be/aTPPmHqMZOw" class="card__link">
+                                    <figure>
+                                        <img src="img/witcher.s02tr01.jpg" alt="" class="card__video-img">
+                                        <figcaption>Русский трейлер#1</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="card card_video">
+                                <a href="https://youtu.be/PQ59CmCyOk4" class="card__link">
+                                    <figure>
+                                        <img src="img/witcher.s02tr02.jpg" alt="" class="card__video-img">
+                                        <figcaption>Русский трейлер#2</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="card card_video">
+                                <a href="https://youtu.be/Si65KjkMy8s" class="card__link">
+                                    <figure>
+                                        <img src="img/witcher.s02tiz01.jpg" alt="" class="card__video-img">
+                                        <figcaption>Тизер на русском</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tabs__item">
+                        <ul class="tabs__content">
+                            <li class="card card_img">
+                                <img class="card__photo-img" src="img/cirilla.jpg" alt="">
+                            </li>
+                            <li class="card card_img">
+                                <img class="card__photo-img" src="img/geralt.jpg" alt="">
+                            </li>
+                            <li class="card card_img">
+                                <img class="card__photo-img" src="img/kadrs2.jpg" alt="">
+                            </li>
+                            <li class="card card_img">
+                                <img class="card__photo-img" src="img/versus.jpg" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tabs__item">
+                        <ul class="tabs__content">
+                            <li class="card card_product">
+                                <arcticle class="product">
+                                    <img class="product__img" src="img/pendant.jpg" alt="">
+                                    <h2>Медальон школы волка</h2>
+                                    <div class="product__wrapper-buy">
+                                        <p class="product__price">999₽</p>
+                                        <button class="product__btn-buy">
+                                            <svg class="product__btn-icon">
+                                                <use xlink:href="#add" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </arcticle>
+                            </li>
+                            <li class=" card card_product">
+                                <arcticle class="product">
+                                    <img class="product__img" src="img/pendent.jpg" alt="">
+                                    <h2>Кулон Волк</h2>
+                                    <div class="product__wrapper-buy">
+                                        <p class="product__price">1999₽</p>
+                                        <button class="product__btn-buy">
+                                            <svg class="product__btn-icon">
+                                                <use xlink:href="#add" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </arcticle>
+                            </li>
+                            <li class="card card_product">
+                                <arcticle class="product">
+                                    <img class="product__img" src="img/mask.jpg" alt="">
+                                    <h2>Маска</h2>
+                                    <div class="product__wrapper-buy">
+                                        <p class="product__price">390₽</p>
+                                        <button class="product__btn-buy">
+                                            <svg class="product__btn-icon">
+                                                <use xlink:href="#add" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </arcticle>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <svg hidden>
+        <symbol id="add" fill="currentColor">
+            <path
+                d="M11 9H13V6H16V4H13V1H11V4H8V6H11V9ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18ZM7.17 14.75L7.2 14.63L8.1 13H15.55C16.3 13 16.96 12.59 17.3 11.97L21.16 4.96L19.42 4H19.41L18.31 6L15.55 11H8.53L8.4 10.73L6.16 6L5.21 4L4.27 2H1V4H3L6.6 11.59L5.25 14.04C5.09 14.32 5 14.65 5 15C5 16.1 5.9 17 7 17H19V15H7.42C7.29 15 7.17 14.89 7.17 14.75Z" />
+        </symbol>
+    </svg>
 </body>
 
 </html>
