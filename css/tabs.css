@@ -1,0 +1,30 @@
+.tabs__control {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 13px 21px;
+    max-width: 285px;
+    margin-left: auto;
+    margin-bottom: 12px;
+    height: auto;
+}
+
+.tabs__btn {
+    font-weight: 700;
+    line-height: 1;
+    background-color: transparent;
+    border-width: 0;
+    color: #fff;
+    border-bottom: 2px solid transparent;  
+}
+
+.tabs__btn-:hover {
+    transition: border-color 0.5s ease-in-out;   
+    border-bottom:2px solid #fff;  
+}
+
+.tabs__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}

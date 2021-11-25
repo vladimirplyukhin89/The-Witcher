@@ -1,0 +1,19 @@
+.header {
+     padding-top: 20px;
+     padding-bottom: 10px;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.header__announcment {
+    justify-self: center;
+}
+
+.header__navigation {
+    justify-self: end;
+}
+
