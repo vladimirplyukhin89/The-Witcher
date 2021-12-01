@@ -24,6 +24,12 @@
     border-radius: 2px;
     background-position: center;
     background-size: cover;
+    transition: filter .3s ease-in-out;
+}
+
+.present__btn:hover {
+    filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51))
+      brightness(1.2);
 }
 
 .present__hero {
