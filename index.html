@@ -12,28 +12,28 @@
     <title>The Witcher | Ведьмак | 2 сезон 17 декабря</title>
 </head>
 
-<body class="body">
+<body class="page">
     <header class="header">
         <div class="container header__container">
-            <img src="img/logo.svg" alt="The Witcher's logo" width="93" height="85" cla78ss="header__logo">
+            <img src="img/logo.svg" alt="The Witcher's logo" width="93" height="85" class="header__logo">
 
             <p class="header__announcment">2 сезон уже с 17 декабря</p>
 
-            <nav class="header__navigation">
+            <nav class="header__navigation navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
                         <a href="https://www.netflix.com/ru/" target="_blank"
-                            class="navigation__link navigation__link-netflix" aria-label="Видеосервис Netflix"></a>
+                            class="navigation__link navigation__link_netflix" aria-label="Видеосервис Netflix"></a>
                     </li>
 
                     <li class="navigation__item">
-                        <a href="https://okko.tv/" target="_blank" class="navigation__link navigation__link-okko"
+                        <a href="https://okko.tv/" target="_blank" class="navigation__link navigation__link_okko"
                             aria-label="Видеосервис Okko"></a>
                     </li>
 
                     <li class="navigation__item">
                         <a href="https://www.kinopoisk.ru/" target="_blank"
-                            class="navigation__link navigation__link-kinopoisk" aria-label="Видеосервис Кинопоиск"></a>
+                            class="navigation__link navigation__link_kinopoisk" aria-label="Видеосервис Кинопоиск"></a>
                     </li>
                 </ul>
             </nav>
@@ -41,9 +41,8 @@
     </header>
 
     <section class="present">
-
-        <div class="container">
-            <div class="present">
+        <div class="container present__container">
+            <div class="present__hero">
                 <h1 class="present__title">
                     Ведьмак
                 </h1>
@@ -56,35 +55,36 @@
             <div class="present__tabs tabs">
                 <ul class="tabs__control">
                     <li class="tabs__btn-wrapper">
-                        <button class="tabs__btn tabs__btn-">Видео</button>
+                        <button class="tabs__btn tabs__btn_active">Видео</button>
                     </li>
                     <li class="tabs__btn-wrapper">
-                        <button class="tabs__btn tabs__btn-">Фото</button>
+                        <button class="tabs__btn tabs__btn_active">Фото</button>
                     </li>
                     <li class="tabs__btn-wrapper">
-                        <button class="tabs__btn tabs__btn-">Мерч</button>
+                        <button class="tabs__btn tabs__btn_active">Мерч</button>
                     </li>
                 </ul>
+
                 <ul class="tabs__list">
-                    <li class="tabs__item tabs__item-active">
+                    <li class="tabs__item tabs__item_active">
                         <ul class="tabs__content">
-                            <li class="card card-video">
+                            <li class="card card_video">
                                 <a href="https://youtu.be/aTPPmHqMZOw" class="card__link">
                                     <figure>
                                         <img src="img/witcher.s02tr01.jpg" alt="" class="card__video-img">
-                                        <figcaption>Русский трейлер#1</figcaption>
+                                        <figcaption>Русский трейлер #1</figcaption>
                                     </figure>
                                 </a>
                             </li>
-                            <li class="card card-video">
+                            <li class="card card_video">
                                 <a href="https://youtu.be/PQ59CmCyOk4" class="card__link">
                                     <figure>
                                         <img src="img/witcher.s02tr02.jpg" alt="" class="card__video-img">
-                                        <figcaption>Русский трейлер#2</figcaption>
+                                        <figcaption>Русский трейлер #2</figcaption>
                                     </figure>
                                 </a>
                             </li>
-                            <li class="card card-video">
+                            <li class="card card_video">
                                 <a href="https://youtu.be/Si65KjkMy8s" class="card__link">
                                     <figure>
                                         <img src="img/witcher.s02tiz01.jpg" alt="" class="card__video-img">
@@ -96,23 +96,23 @@
                     </li>
                     <li class="tabs__item">
                         <ul class="tabs__content">
-                            <li class="card card-img">
+                            <li class="card card_img">
                                 <img class="card__photo-img" src="img/cirilla.jpg" alt="">
                             </li>
-                            <li class="card card-img">
+                            <li class="card card_img">
                                 <img class="card__photo-img" src="img/geralt.jpg" alt="">
                             </li>
-                            <li class="card card-img">
+                            <li class="card card_img">
                                 <img class="card__photo-img" src="img/kadrs2.jpg" alt="">
                             </li>
-                            <li class="card card-img">
+                            <li class="card card_img">
                                 <img class="card__photo-img" src="img/versus.jpg" alt="">
                             </li>
                         </ul>
                     </li>
                     <li class="tabs__item">
                         <ul class="tabs__content">
-                            <li class="card card-product">
+                            <li class="card card_product">
                                 <arcticle class="product">
                                     <img class="product__img" src="img/pendant.jpg" alt="">
                                     <h2>Медальон школы волка</h2>
@@ -126,7 +126,7 @@
                                     </div>
                                 </arcticle>
                             </li>
-                            <li class=" card card-product">
+                            <li class=" card card_product">
                                 <arcticle class="product">
                                     <img class="product__img" src="img/pendent.jpg" alt="">
                                     <h2>Кулон Волк</h2>
@@ -140,7 +140,7 @@
                                     </div>
                                 </arcticle>
                             </li>
-                            <li class="card card-product">
+                            <li class="card card_product">
                                 <arcticle class="product">
                                     <img class="product__img" src="img/mask.jpg" alt="">
                                     <h2>Маска</h2>
@@ -155,11 +155,9 @@
                                 </arcticle>
                             </li>
                         </ul>
-
                     </li>
                 </ul>
             </div>
-
         </div>
     </section>
 

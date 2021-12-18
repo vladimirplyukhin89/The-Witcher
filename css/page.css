@@ -54,3 +54,10 @@ iframe {
     margin-left: auto;
     margin-left: auto;
 }
+
+@media (min-height: 900px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+    }
+}

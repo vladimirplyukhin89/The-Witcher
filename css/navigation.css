@@ -4,10 +4,10 @@
 }
 
 .navigation__link {
-    background-color: rgba(255, 255, 255, 0.7);
+    display: block;
     width: 40px;
     height: 40px;
-    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,14 +24,14 @@
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
-.navigation__link-netflix {
+.navigation__link_netflix {
     background-image: url(../img/netflix.svg);
 } 
 
-.navigation__link-okko {
+.navigation__link_okko {
     background-image: url(../img/okko.svg);
 }
 
-.navigation__link-kinopoisk {
+.navigation__link_kinopoisk {
     background-image: url(../img/kinopoisk.svg);
 }
