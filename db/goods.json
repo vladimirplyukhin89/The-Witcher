@@ -1,0 +1,17 @@
+[
+  {
+  "picture": "db/image/hoody.jpg",
+  "name": "Детская толстовка 3D",
+  "price": 1999
+  },
+  {
+  "picture": "db/image/puzzle.jpg",
+  "name": "Подарочный набор Ведьмак",
+  "price": 2999
+  },
+  {
+  "picture": "db/image/baseball.jpg",
+  "name": "Кепка The Witcher Eredin",
+  "price": 2499
+  }
+]
