@@ -1,7 +1,7 @@
 .tabs__control {
     display: flex;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 13px 21px;
     max-width: 285px;
     margin-left: auto;
@@ -11,20 +11,59 @@
 
 .tabs__btn {
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.1;
     background-color: transparent;
     border-width: 0;
     color: #fff;
     border-bottom: 2px solid transparent;  
 }
 
-.tabs__btn-:hover {
+.tabs__btn_active:hover {
     transition: border-color 0.5s ease-in-out;   
-    border-bottom:2px solid #fff;  
+    border-bottom:2px solid #fff;
 }
 
 .tabs__content {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+
+@media (max-width: 1000px) {
+    .tabs__control {
+        padding: 18px 38px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .tabs__content {
+        flex-wrap: wrap;
+    }
+
+    .tabs__control {
+        padding: 16px 46px;
+        margin-bottom: 32px;
+    }
+
+    .tabs__content_video {
+        row-gap: 50px;
+    }
+    
+    .tabs__content_picture {
+        row-gap: 30px;
+    }
+    
+    .tabs__content_product {
+        row-gap: 35px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .tabs__control {
+        max-width: 220px;
+        padding: 10px 30px;
+        margin-bottom: 10px;
+    }
 }

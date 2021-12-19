@@ -13,6 +13,7 @@
 .present__tagline {
     line-height: 130%;
     margin-bottom: 54px;
+    max-width: 350px;
 }
 
 .present__btn {
@@ -36,7 +37,7 @@
     margin-bottom: 30px;
 }
 
-@media (min-height: 900px) {
+/*@media (min-height: 900px) {
     .present {
         flex-grow: 1;
         display: flex;
@@ -49,8 +50,105 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        max-height: 1200px;
+        max-height: 1100px;
+    }
+}*/
 
+@media (max-width: 1000px) {
+    .present {
+        padding-top: 25px;
+    }
 
+    .present__hero {
+        margin-bottom: 10px;
+}
+
+    .present__btn {
+        width: 246px;
+        height: 59px;
+    }
+    
+    .present__title {
+        font-size: 70px;
+    }
+
+    .present__tagline {
+        margin-bottom: 28px;
+        max-width: 290px;
+    }
+}
+
+@media (max-width: 850px) {
+    .present {
+        padding-top: 58px;
+    }
+
+    .present__hero {
+        margin-bottom: 0px;
+    }
+
+    .present__title {
+        font-size: 60px;
+    }
+
+    .present__tabs {
+        margin-top: -26px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {
+        padding-top: 0 39px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding-top: 0 25px;
+    }
+}
+
+@media (max-width: 650px) {
+    .present {
+        padding-top: 75px;
+    }
+
+    .present__hero {
+        margin-bottom: 30px;
+    }   
+
+    .present__tabs {
+        margin-top: 0;
+    }
+
+    .present__title {
+        font-size: 50px;
+        margin-bottom: 6px;
+    }
+
+    .present__tagline {
+        max-width: 260px;
+        margin-bottom: 23px;
+    }
+
+    .present__btn {
+        width: 290px;
+        height: 63px;
+    }
+}
+
+@media (max-width: 480px) {
+    .present__title {
+        font-size: 40px;
+    }
+
+    .present__tagline {
+        max-width: 193px;
+    }
+}
+
+@media (max-width: 320px) { 
+    .tabs__control  {
+        margin: 0 auto 20px;
     }
 }

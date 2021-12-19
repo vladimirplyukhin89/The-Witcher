@@ -9,6 +9,7 @@
     <link rel="preload" href="fonts/ibm-plex-mono-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" href="img/logo.svg" type="image=/svg+xml">
     <link rel="icon" href="img/logo.png" type="image=/png">
+    <script defer src="js/index.js" type="module"></script>
     <title>The Witcher | Ведьмак | 2 сезон 17 декабря</title>
 </head>
 
@@ -17,7 +18,7 @@
         <div class="container header__container">
             <img src="img/logo.svg" alt="The Witcher's logo" width="93" height="85" class="header__logo">
 
-            <p class="header__announcment">2 сезон уже с 17 декабря</p>
+            <p class="header__announcment">История продолжается</p>
 
             <nav class="header__navigation navigation">
                 <ul class="navigation__list">
@@ -25,17 +26,18 @@
                         <a href="https://www.netflix.com/ru/" target="_blank"
                             class="navigation__link navigation__link_netflix" aria-label="Видеосервис Netflix"></a>
                     </li>
-
                     <li class="navigation__item">
                         <a href="https://okko.tv/" target="_blank" class="navigation__link navigation__link_okko"
                             aria-label="Видеосервис Okko"></a>
                     </li>
-
                     <li class="navigation__item">
                         <a href="https://www.kinopoisk.ru/" target="_blank"
                             class="navigation__link navigation__link_kinopoisk" aria-label="Видеосервис Кинопоиск"></a>
                     </li>
                 </ul>
+                <button class="navigation__btn burger">
+                    <span class="burger__line"></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -67,7 +69,7 @@
 
                 <ul class="tabs__list">
                     <li class="tabs__item tabs__item_active">
-                        <ul class="tabs__content">
+                        <ul class="tabs__content  tabs__content_video">
                             <li class="card card_video">
                                 <a href="https://youtu.be/aTPPmHqMZOw" class="card__link">
                                     <figure>
@@ -95,7 +97,7 @@
                         </ul>
                     </li>
                     <li class="tabs__item">
-                        <ul class="tabs__content">
+                        <ul class="tabs__content tabs__content_picture">
                             <li class="card card_img">
                                 <img class="card__photo-img" src="img/cirilla.jpg" alt="">
                             </li>
@@ -111,11 +113,11 @@
                         </ul>
                     </li>
                     <li class="tabs__item">
-                        <ul class="tabs__content">
+                        <ul class="tabs__content tabs__content_product">
                             <li class="card card_product">
                                 <arcticle class="product">
                                     <img class="product__img" src="img/pendant.jpg" alt="">
-                                    <h2>Медальон школы волка</h2>
+                                    <h2 class="product__title">Медальон школы волка</h2>
                                     <div class="product__wrapper-buy">
                                         <p class="product__price">999₽</p>
                                         <button class="product__btn-buy">
@@ -129,7 +131,7 @@
                             <li class=" card card_product">
                                 <arcticle class="product">
                                     <img class="product__img" src="img/pendent.jpg" alt="">
-                                    <h2>Кулон Волк</h2>
+                                    <h2 class="product__title">Кулон Волк</h2>
                                     <div class="product__wrapper-buy">
                                         <p class="product__price">1999₽</p>
                                         <button class="product__btn-buy">
@@ -143,7 +145,7 @@
                             <li class="card card_product">
                                 <arcticle class="product">
                                     <img class="product__img" src="img/mask.jpg" alt="">
-                                    <h2>Маска</h2>
+                                    <h2 class="product__title">Маска</h2>
                                     <div class="product__wrapper-buy">
                                         <p class="product__price">390₽</p>
                                         <button class="product__btn-buy">
