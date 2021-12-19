@@ -99,9 +99,10 @@ iframe {
     }
 
     .page:before {
-        top: 48px;
+        top: 98px;
         bottom: auto;
         height: 448px;
+        right: 20px;
     }
 }
 
@@ -116,6 +117,7 @@ iframe {
 
      .page:before {
         top: 48px;
+        right: 30px;       
         height: 258px;
     }
 }
