@@ -9,7 +9,7 @@
     <link rel="preload" href="fonts/ibm-plex-mono-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" href="img/logo.svg" type="image=/svg+xml">
     <link rel="icon" href="img/logo.png" type="image=/png">
-    <script defer src="js/index.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
     <title>The Witcher | Ведьмак | 2 сезон 17 декабря</title>
 </head>
 
@@ -69,7 +69,7 @@
 
                 <ul class="tabs__list">
                     <li class="tabs__item tabs__item_active">
-                        <ul class="tabs__content  tabs__content_video">
+                        <ul class="tabs__content  tabs__content_video" data-base="video">
                             <li class="card card_video">
                                 <a href="https://youtu.be/aTPPmHqMZOw" class="card__link">
                                     <figure>
@@ -97,7 +97,7 @@
                         </ul>
                     </li>
                     <li class="tabs__item">
-                        <ul class="tabs__content tabs__content_picture">
+                        <ul class="tabs__content tabs__content_picture" data-base="photo">
                             <li class="card card_img">
                                 <img class="card__photo-img" src="img/cirilla.jpg" alt="">
                             </li>
@@ -113,7 +113,7 @@
                         </ul>
                     </li>
                     <li class="tabs__item">
-                        <ul class="tabs__content tabs__content_product">
+                        <ul class="tabs__content tabs__content_product" data-base="goods">
                             <li class="card card_product">
                                 <arcticle class="product">
                                     <img class="product__img" src="img/pendant.jpg" alt="">
