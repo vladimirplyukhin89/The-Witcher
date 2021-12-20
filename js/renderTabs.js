@@ -1,7 +1,6 @@
 import getData from "./getData.js";
 
 const getCard = function (dataCard) {
-    console.log(dataCard);
     const li = document.createElement('li');
     li.classList.add('card');
 
@@ -15,26 +14,6 @@ const getCard = function (dataCard) {
                     <figcaption>${dataCard.description}</figcaption>
                 </figure>
             </a>`;
-            break;
-        case `photo`:
-            li.classList.add('card_photo');
-            li.innerHTML = `<img class="card__photo-img" src="${dataCard.link}" alt="${dataCard.description}">`;
-            break;
-        case `goods`:
-            li.classList.add('card_product');
-            li.innerHTML = `
-                <arcticle class="product">
-                    <img class="product__img" src="${dataCard.picture}" alt="${dataCard.description}">
-                        <h2 class="product__title">${dataCard.name}</h2>
-                        <div class="product__wrapper-buy">
-                            <p class="product__price">${dataCard.price}</p>
-                            <button class="product__btn-buy">
-                                <svg class="product__btn-icon">
-                                    <use xlink:href="#add" />
-                                </svg>
-                            </button>
-                        </div>
-                </arcticle>`;
             break;
         default:
             li.innerHTML = 'Нет данных';
